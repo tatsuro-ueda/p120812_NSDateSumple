@@ -32,6 +32,26 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    array = [NSMutableArray array];
+    NSDate *date;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSString *s = @"HH:mm";
+    dateFormatter.dateFormat = s;
+    
+    date = [dateFormatter dateFromString:@"15:00"];
+    [array addObject:date];
+    
+    date = [dateFormatter dateFromString:@"20:05"];
+    [array addObject:date];
+    
+    date = [dateFormatter dateFromString:@"1:20"];
+    [array addObject:date];
+    
+    date = [dateFormatter dateFromString:@"3:40"];
+    [array addObject:date];
+        
+    NSLog(@"%@", array);
 }
 
 - (void)viewDidUnload
@@ -50,16 +70,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,6 +86,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
+    NSLog(@"%@", array);
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [array objectAtIndex:indexPath.row]];
     
     return cell;
 }

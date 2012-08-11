@@ -14,7 +14,7 @@
 		07F26CCB15D6BA6C0080F9B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F26CCA15D6BA6C0080F9B6 /* main.m */; };
 		07F26CCF15D6BA6C0080F9B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F26CCE15D6BA6C0080F9B6 /* AppDelegate.m */; };
 		07F26CD215D6BA6C0080F9B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F26CD015D6BA6C0080F9B6 /* MainStoryboard.storyboard */; };
-		07F26CD515D6BA6C0080F9B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F26CD415D6BA6C0080F9B6 /* ViewController.m */; };
+		07F26CE015D6BDAF0080F9B6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F26CDF15D6BDAF0080F9B6 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +22,15 @@
 		07F26CBE15D6BA6C0080F9B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07F26CC015D6BA6C0080F9B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07F26CC215D6BA6C0080F9B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		07F26CC615D6BA6C0080F9B6 /* NSDateSumple-Info.plist */ = {isa = PBXFileReference; path = "NSDateSumple-Info.plist"; sourceTree = "<group>"; };
+		07F26CC615D6BA6C0080F9B6 /* NSDateSumple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSDateSumple-Info.plist"; sourceTree = "<group>"; };
 		07F26CC815D6BA6C0080F9B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07F26CCA15D6BA6C0080F9B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07F26CCC15D6BA6C0080F9B6 /* NSDateSumple-Prefix.pch */ = {isa = PBXFileReference; path = "NSDateSumple-Prefix.pch"; sourceTree = "<group>"; };
-		07F26CCD15D6BA6C0080F9B6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		07F26CCC15D6BA6C0080F9B6 /* NSDateSumple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateSumple-Prefix.pch"; sourceTree = "<group>"; };
+		07F26CCD15D6BA6C0080F9B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07F26CCE15D6BA6C0080F9B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		07F26CD115D6BA6C0080F9B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		07F26CD315D6BA6C0080F9B6 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		07F26CD415D6BA6C0080F9B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07F26CDE15D6BDAF0080F9B6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		07F26CDF15D6BDAF0080F9B6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 				07F26CCD15D6BA6C0080F9B6 /* AppDelegate.h */,
 				07F26CCE15D6BA6C0080F9B6 /* AppDelegate.m */,
 				07F26CD015D6BA6C0080F9B6 /* MainStoryboard.storyboard */,
-				07F26CD315D6BA6C0080F9B6 /* ViewController.h */,
-				07F26CD415D6BA6C0080F9B6 /* ViewController.m */,
+				07F26CDE15D6BDAF0080F9B6 /* TableViewController.h */,
+				07F26CDF15D6BDAF0080F9B6 /* TableViewController.m */,
 				07F26CC515D6BA6C0080F9B6 /* Supporting Files */,
 			);
 			path = NSDateSumple;
@@ -162,7 +162,7 @@
 			files = (
 				07F26CCB15D6BA6C0080F9B6 /* main.m in Sources */,
 				07F26CCF15D6BA6C0080F9B6 /* AppDelegate.m in Sources */,
-				07F26CD515D6BA6C0080F9B6 /* ViewController.m in Sources */,
+				07F26CE015D6BDAF0080F9B6 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
